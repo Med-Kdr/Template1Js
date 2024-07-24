@@ -10,9 +10,6 @@ let scrollPage = document.querySelector(".scrollPage");
 window.addEventListener("scroll",_ => {
     let heightPrincipal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     scrollPage.style.width = `${(window.scrollY / heightPrincipal) * 100}%`;
-    console.log("document  : "+ document.documentElement.scrollTop);
-    console.log("window  : "+ window.scrollY);
-    console.log("################################################");
 });
 // #################################### End Scroll Page
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -118,7 +115,9 @@ document.querySelector(".nav > .color > .colors").addEventListener("click", e =>
 let arraysImage = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg"];
 let backgroundImgRandomFunction = function() {
     let randomNumber = Math.floor(Math.random() * arraysImage.length);
-    document.querySelector(".landing").style = `background-image: url(../imgs/${arraysImage[randomNumber]});`;
+    // document.querySelector(".landing").style = `background-image: url(../imgs/${arraysImage[randomNumber]});`;
+    // for github
+    document.querySelector(".landing").style = `background-image: url(https://med-kdr.github.io/imgs/${arraysImage[randomNumber]});`;
 };
 // let intervalBackgroundImg = setInterval(backgroundImgRandomFunction,500);
 
